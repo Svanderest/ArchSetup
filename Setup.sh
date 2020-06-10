@@ -17,7 +17,7 @@ keepassxc wget krdc nautilus virtualbox rsync evince transmission-gtk xf86-video
 os-prober papirus-icon-theme scons
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig
-systemctl enable dhcpcd ligthdm sshd
+systemctl enable dhcpcd lightdm sshd
 cd tmp
 sudo -u sebastian git clone https://aur.archlinux.org/yay.git
 cd yay
