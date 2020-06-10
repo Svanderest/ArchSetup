@@ -16,7 +16,7 @@ pacman -S grub dhcpcd xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm li
 keepassxc wget krdc nautilus virtualbox rsync evince transmission-gtk xf86-video-intel openssh nano efibootmgr \
 os-prober papirus-icon-theme scons
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-grub-mkconfig
+grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable dhcpcd lightdm sshd
 cd tmp
 sudo -u sebastian git clone https://aur.archlinux.org/yay.git
@@ -29,5 +29,5 @@ sudo -u sebastian yay -S dockbarx xfce4-dockbarx-plugin balena-etcher plata-them
 cd /opt
 wget https://github.com/pokemon-speedrunning/gambatte-speedrun/archive/r717.tar.gz
 tar xvf r717.tar.gz
-gambatte-speedrun/scripts/build_qt.sh
+gambatte-speedrun-r717/scripts/build_qt.sh
 cd /
