@@ -13,7 +13,7 @@ passwd
 useradd -mG users,wheel -s /bin/bash sebastian
 passwd sebastian
 pacman -S grub dhcpcd xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter firefox terminator \
-keepassxc git wget krdc nautilus virtualbox rsync evince transmission-gtk xf86-video-intel openssh nano efibootmgr \
+keepassxc wget krdc nautilus virtualbox rsync evince transmission-gtk xf86-video-intel openssh nano efibootmgr \
 os-prober papirus-icon-theme scons
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 grub-mkconfig
