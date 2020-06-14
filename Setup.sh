@@ -15,7 +15,7 @@ passwd sebastian
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 pacman -S grub dhcpcd xorg xorg-server xorg-xinit xfce4 xfce4-goodies lightdm lightdm-gtk-greeter firefox terminator \
 keepassxc wget krdc nautilus virtualbox rsync evince transmission-gtk xf86-video-intel openssh nano efibootmgr \
-os-prober papirus-icon-theme scons pulseaudio pulseaudio-alsa alsa-utils
+os-prober papirus-icon-theme scons pulseaudio pulseaudio-alsa alsa-utils git
 grub-install --target=x86_64-efi --efi-directory=/efi  --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable dhcpcd lightdm sshd
