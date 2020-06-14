@@ -27,3 +27,7 @@ cd ..
 rm -rf yay
 cd ..
 sudo -u sebastian yay -S dockbarx xfce4-dockbarx-plugin balena-etcher plata-theme jdk8
+mv configs.tgz /home/sebastian
+cd /home/sebastian
+chown sebastian:users configs.tgz
+sudo -u sebastian tar xvf configs.tgz
